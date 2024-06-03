@@ -33,7 +33,7 @@ check("password","Password 6 or more characters Requireds").isLength({
         { userId: user.id },
         process.env.JWT_SECRET_KEY as string,
         {
-          expiresIn: "1d",
+          expiresIn: "10s",
         }
       );
 
